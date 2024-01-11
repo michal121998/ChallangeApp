@@ -1,16 +1,16 @@
-﻿string imię = "Michał";
-string płeć = "m";
-int wiek = 25;
+﻿string name = "Michał";
+string gender = "m";
+int age = 25;
 
-if (płeć == "k")
+if (gender == "k")
 {
     Console.WriteLine("Kobieta poniżej 30 lat");
 }
-else if (imię == "Ewa" && wiek == 30)
+else if (name == "Ewa" && age == 30)
 {
     Console.WriteLine("Ewa, lat 30");
 }
-else if (płeć == "m" && wiek < 18 )
+else if (gender == "m" && age < 18 )
 {
     Console.WriteLine("Niepełnoletni mężczyzna");
 }
