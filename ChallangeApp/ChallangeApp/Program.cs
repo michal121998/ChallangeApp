@@ -26,13 +26,13 @@ Employee employeeWithMaxResult = null;
 
 foreach(var employee in employees)
 {
-    if(employee.maxResult > maxResult)
+    if(employee.MaxResult > maxResult)
     {
         employeeWithMaxResult = employee;
-        maxResult = employee.maxResult;
+        maxResult = employee.MaxResult;
     }
 }
 
 Console.WriteLine("Najlepszy pracownik to: " + employeeWithMaxResult.Name + " " + 
     employeeWithMaxResult.LastName + " " + employeeWithMaxResult.Age +
-    " lat" + " z wynikiem" + " " + employeeWithMaxResult.maxResult  );
+    " lat" + " z wynikiem" + " " + employeeWithMaxResult.MaxResult  );

@@ -16,7 +16,7 @@
 
         public int Age { get; set; }
 
-        public int maxResult
+        public int MaxResult
         {
             get
             {
