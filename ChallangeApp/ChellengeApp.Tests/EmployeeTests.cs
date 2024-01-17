@@ -3,7 +3,7 @@ using ChallangeApp;
 
 namespace ChellengeApp.Test
 {
-    public class Tests
+    public class EmployeeTests
     { 
         [Test]
         public void CheckSumEmployee1Points()
