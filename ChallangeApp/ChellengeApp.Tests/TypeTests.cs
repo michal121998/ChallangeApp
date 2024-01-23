@@ -8,19 +8,18 @@ namespace ChellengeApp.Tests
         public void TESTVAR()
         {
             // arrange
-            var employee1 = GetEmployee("Anna", "Bujak", 20);
-            var employee2 = GetEmployee("Adam", "Zak", 22);
+            var employee = GetEmployee("Anna", "Bujak");
 
             // act
 
             // assert
-            Assert.AreNotEqual(employee1, employee2);
+            Assert.AreNotEqual(employee, employee);
 
         }
 
-        private Employee GetEmployee(string name, string surname, int age) 
+        private Employee GetEmployee(string name, string surname) 
         {
-            return new Employee(name, surname, age);
+            return new Employee(name, surname);
         }
 
         [Test]

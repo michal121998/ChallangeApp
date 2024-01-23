@@ -1,17 +1,10 @@
 ﻿using ChallangeApp;
 
-Employee employee1 = new Employee("Anna", "Bujak", 20);
-Employee employee2 = new Employee("Adam", "Nowak", 24);
-Employee employee3 = new Employee("Angelika", "Gaj", 25);
-
-employee1.AddScore(3);
-employee1.AddScore(6);
-employee1.AddScore(1);
-
-employee2.AddScore(9);
-employee2.AddScore(1);
-employee2.AddScore(3);
-
-employee3.AddScore(6);
-employee3.AddScore(4);
-employee3.AddScore(5);
+var employee = new Employee("Anna", "Bujak");
+employee.AddGrade(2);
+employee.AddGrade(3);
+employee.AddGrade(4);
+var statistics = employee.GetStatistics();
+Console.WriteLine($"Average: + {statistics.Average:N2}");
+Console.WriteLine($"Min : + {statistics.Min}");
+Console.WriteLine($"Max : + {statistics.Max}");
