@@ -1,4 +1,7 @@
-﻿namespace ChallangeApp
+﻿using System.ComponentModel.Design;
+using System.Runtime.CompilerServices;
+
+namespace ChallangeApp
 {
     public class Employee
     {
@@ -16,7 +19,46 @@
 
         public void AddGrade(float grade)
         {
-            this.grades.Add(grade);
+            if(grade >= 0 && grade <= 100)
+            {
+                this.grades.Add(grade);
+            }
+            else
+            {
+                Console.WriteLine("Invalid grade value");
+            }
+        }
+
+        public void AddGrade(string grade)
+        {
+            if(float.TryParse(grade, out float result))
+            { 
+                this.AddGrade(result); 
+            }
+            else
+            {
+                Console.WriteLine("String isn't float");
+            }
+        }
+
+        public void AddGrade(int grade)
+        {
+            AddGrade((float)grade);
+        }
+
+        public void AddGrade(double grade)
+        {
+            AddGrade((float)grade);
+        }
+
+        public void AddGrade(decimal grade)
+        {
+            AddGrade((float)grade);
+        }
+
+        public void AddGrade(char grade)
+        {
+            AddGrade((float)grade);
         }
 
         public Statistics GetStatistics()
